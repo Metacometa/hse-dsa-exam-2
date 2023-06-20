@@ -7,7 +7,7 @@ using namespace std;
 int main()
 {
 	Ticket7 ticket7;
-	ticket7.topological_sort(test_graph_1);
+	ticket7.topological_sort(test_graph_3);
 
 
 }
