@@ -21,7 +21,7 @@ public:
 			}
 		}
 		reverse(order.begin(), order.end());
-		std::cout << "Ticket 7: Topological sort" << std::endl;
+		std::cout << "Ticket 7: Topological sort:" << std::endl;
 		for (auto& i : order) {
 			std::cout << i << " ";
 		}

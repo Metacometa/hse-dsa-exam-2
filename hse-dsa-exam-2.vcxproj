@@ -139,12 +139,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="DisjointSet.cpp" />
     <ClCompile Include="graphs.cpp" />
     <ClCompile Include="hse-dsa-exam-2.cpp" />
+    <ClCompile Include="WeightedAdjacencyList.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="DisjointSet.h" />
     <ClInclude Include="graphs.h" />
+    <ClInclude Include="Ticket16.h" />
+    <ClInclude Include="Ticket17.h" />
+    <ClInclude Include="Ticket6.h" />
     <ClInclude Include="Ticket7.h" />
+    <ClInclude Include="WeightedAdjacencyList.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
