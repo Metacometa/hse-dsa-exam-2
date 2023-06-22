@@ -142,18 +142,18 @@
     <ClCompile Include="DisjointSet.cpp" />
     <ClCompile Include="graphs.cpp" />
     <ClCompile Include="hse-dsa-exam-2.cpp" />
-    <ClCompile Include="WeightedAdjacencyList.cpp" />
+    <ClCompile Include="WeightedNode.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DisjointSet.h" />
     <ClInclude Include="graphs.h" />
-    <ClInclude Include="Ticket11.h" />
+    <ClInclude Include="Ticket12.h" />
     <ClInclude Include="Ticket16.h" />
     <ClInclude Include="Ticket17.h" />
     <ClInclude Include="Ticket18.h" />
     <ClInclude Include="Ticket6.h" />
     <ClInclude Include="Ticket7.h" />
-    <ClInclude Include="WeightedAdjacencyList.h" />
+    <ClInclude Include="WeightedNode.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -4,7 +4,7 @@
 #include <utility>
 #include "DisjointSet.h"
 
-#include "WeightedAdjacencyList.h"
+#include "WeightedNode.h"
 
 using namespace std;
 

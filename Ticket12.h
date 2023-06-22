@@ -5,7 +5,7 @@
 
 using namespace std;
 
-class Ticket11
+class Ticket12
 {
 	int INF = 10000;
 	vector<bool> used;
