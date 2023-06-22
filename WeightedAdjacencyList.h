@@ -12,5 +12,7 @@ struct WeightedAdjacencyList
 	WeightedAdjacencyList(const int& weight_, const int& from, const int& to);
 	WeightedAdjacencyList(const WeightedAdjacencyList& source);
 	WeightedAdjacencyList();
+
+	friend bool operator==(const WeightedAdjacencyList& a, const WeightedAdjacencyList& b);
 };
 

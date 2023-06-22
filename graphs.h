@@ -25,4 +25,5 @@ extern vector<pair<int, int>> ticket7_test3;
 extern vector<WeightedAdjacencyList> ticket16_test1;
 extern vector<WeightedAdjacencyList> ticket16_test2;
 extern vector<WeightedAdjacencyList> ticket16_test3;
+extern vector<WeightedAdjacencyList> ticket16_test4;
 

@@ -15,3 +15,8 @@ WeightedAdjacencyList::WeightedAdjacencyList(const WeightedAdjacencyList& source
 WeightedAdjacencyList::WeightedAdjacencyList()
 {
 }
+
+bool operator==(const WeightedAdjacencyList& a, const WeightedAdjacencyList& b)
+{
+	return a.weight == b.weight and a.from == b.from and a.to == b.to;
+}

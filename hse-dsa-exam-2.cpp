@@ -5,6 +5,7 @@
 #include "Ticket7.h"
 #include "Ticket16.h"
 #include "Ticket17.h"
+#include "Ticket18.h"
 #include "graphs.h"
 
 using namespace std;
@@ -22,5 +23,9 @@ int main()
 
 	Ticket17 ticket17;
 	ticket17.Prim(ticket16_test3);
+
+	Ticket18 ticket18;
+	ticket18.Boruvka(ticket16_test3);
+
 
 }
