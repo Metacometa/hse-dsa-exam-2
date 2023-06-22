@@ -10,14 +10,14 @@ class Ticket17
 	int INF = 100000;
 	vector<bool> used;
 public:
-	WeightedAdjacencyList getClosest(vector<WeightedAdjacencyList>& graph) {
-		WeightedAdjacencyList temp(INF, 0, 0);
+	WeightedNode getClosest(vector<WeightedNode>& graph) {
+		WeightedNode temp(INF, 0, 0);
 		for (int i = 0; i < used.size(); ++i) {
 			if (used[i]) {
 				for (auto& node : graph) {
 					if ((node.to == i and node.from != i and used[node.from] == false)
 						or (node.to != i and node.from == i and used[node.to] == false)) {
-						temp = min(temp, node, [](const WeightedAdjacencyList &a, const WeightedAdjacencyList &b) { return a.weight < b.weight;});
+						temp = min(temp, node, [](const WeightedNode &a, const WeightedNode &b) { return a.weight < b.weight;});
 					}
 				}
 			}
@@ -25,13 +25,13 @@ public:
 		return temp;
 	}
 
-	void Prim(vector<WeightedAdjacencyList>& graph) {
-		vector<WeightedAdjacencyList> minimumSpanningTree;
+	void Prim(vector<WeightedNode>& graph) {
+		vector<WeightedNode> minimumSpanningTree;
 
 		used.resize(getNodes(graph).size() + 1);
 
 		used[graph.front().from] = true;
-		WeightedAdjacencyList temp;
+		WeightedNode temp;
 		for (int i = 0; i < used.size(); ++i) {
 			temp = getClosest(graph);
 			if (temp.weight != INF) {

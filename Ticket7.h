@@ -26,6 +26,7 @@ public:
 			std::cout << i << " ";
 		}
 		std::cout << std::endl;
+		cout << endl;
 	}
 
 	void dfs(const int &start, const vector<pair<int, int>>& graph) {

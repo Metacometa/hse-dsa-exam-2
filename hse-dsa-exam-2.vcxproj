@@ -147,6 +147,7 @@
   <ItemGroup>
     <ClInclude Include="DisjointSet.h" />
     <ClInclude Include="graphs.h" />
+    <ClInclude Include="Ticket11.h" />
     <ClInclude Include="Ticket16.h" />
     <ClInclude Include="Ticket17.h" />
     <ClInclude Include="Ticket18.h" />

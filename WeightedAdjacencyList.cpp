@@ -1,22 +1,22 @@
 #include "WeightedAdjacencyList.h"
 
-WeightedAdjacencyList::WeightedAdjacencyList(const int& weight_, const int& from_, const int& to_) : weight(weight_), from(from_), to(to_)
+WeightedNode::WeightedNode(const int& weight_, const int& from_, const int& to_) : weight(weight_), from(from_), to(to_)
 {
 }
 
 
-WeightedAdjacencyList::WeightedAdjacencyList(const WeightedAdjacencyList& source)
+WeightedNode::WeightedNode(const WeightedNode& source)
 {
 	this->weight = source.weight;
 	this->from = source.from;
 	this->to = source.to;
 }
 
-WeightedAdjacencyList::WeightedAdjacencyList()
+WeightedNode::WeightedNode()
 {
 }
 
-bool operator==(const WeightedAdjacencyList& a, const WeightedAdjacencyList& b)
+bool operator==(const WeightedNode& a, const WeightedNode& b)
 {
 	return a.weight == b.weight and a.from == b.from and a.to == b.to;
 }

@@ -4,15 +4,15 @@
 
 using namespace std;
 
-struct WeightedAdjacencyList
+struct WeightedNode
 {
 	int weight = -1;
 	int from = -1;
 	int to = -1;
-	WeightedAdjacencyList(const int& weight_, const int& from, const int& to);
-	WeightedAdjacencyList(const WeightedAdjacencyList& source);
-	WeightedAdjacencyList();
+	WeightedNode(const int& weight_, const int& from, const int& to);
+	WeightedNode(const WeightedNode& source);
+	WeightedNode();
 
-	friend bool operator==(const WeightedAdjacencyList& a, const WeightedAdjacencyList& b);
+	friend bool operator==(const WeightedNode& a, const WeightedNode& b);
 };
 

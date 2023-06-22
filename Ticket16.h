@@ -7,12 +7,12 @@ class Ticket16
 	DisjointSet ds;
 
 public:
-	void Kruskal(vector<WeightedAdjacencyList> &graph) {
-		vector<WeightedAdjacencyList> minimumSpanningTree;
+	void Kruskal(vector<WeightedNode> &graph) {
+		vector<WeightedNode> minimumSpanningTree;
 
 		ds.MakeSet(getNodes(graph));
 
-		sort(graph.begin(), graph.end(), [](const WeightedAdjacencyList& a, const WeightedAdjacencyList& b) { return a.weight < b.weight; });
+		sort(graph.begin(), graph.end(), [](const WeightedNode& a, const WeightedNode& b) { return a.weight < b.weight; });
 
 		for (auto& i : graph) {
 			if (ds.Find(i.from) != ds.Find(i.to)) {

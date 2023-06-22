@@ -1,6 +1,6 @@
 #include "graphs.h"
 
-vector<int> getNodes(const vector<WeightedAdjacencyList> &graph)
+vector<int> getNodes(const vector<WeightedNode> &graph)
 {
 	set<int> nodes;
 	for (auto& i : graph) {
@@ -71,13 +71,38 @@ vector<pair<int, int>> ticket7_test3{
 	{3,1}
 };
 
+//Dijkstra tests
+vector<WeightedNode> dijkstra_test1{
+	{10, 1, 2},
+	{100, 1, 5},
+	{30, 1, 4},
+	{50, 2, 3},
+	{10, 3, 5},
+	{20, 4, 3},
+	{60, 4, 5}
+};
+
+vector<WeightedNode> dijkstra_test2 {
+	{2, 1, 2},
+	{6, 1, 3},
+	{5, 2, 4},
+	{8, 3, 4},
+	{15, 4, 6},
+	{10, 4, 5},
+	{6, 6, 7},
+	{2, 5, 7},
+	{6, 5, 6}
+};
+
+
+
 //ticket 8
-vector<WeightedAdjacencyList> ticket16_test1{
+vector<WeightedNode> mst_test1{
 	{50, 1, 2},
 	{100, 2, 3}
 };
 
-vector <WeightedAdjacencyList> ticket16_test2{
+vector <WeightedNode> mst_test2{
 	{4,	2, 5},
 	{6,	8, 6},
 	{7,	2, 3},
@@ -94,7 +119,7 @@ vector <WeightedAdjacencyList> ticket16_test2{
 	{14, 3,	5},
 };
 
-vector<WeightedAdjacencyList> ticket16_test3{
+vector<WeightedNode> mst_test3{
 	{10, 1, 6},
 	{28, 1, 2},
 	{25, 6, 5},
@@ -106,7 +131,7 @@ vector<WeightedAdjacencyList> ticket16_test3{
 	{12, 3, 4}
 };
 
-vector<WeightedAdjacencyList> ticket16_test4{
+vector<WeightedNode> mst_test4{
 	{4, 0, 1},
 	{8, 0, 7},
 	{11, 1, 7},

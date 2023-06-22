@@ -21,12 +21,12 @@ public:
 		return vertices;
 	}
 
-	void Boruvka(const vector<WeightedAdjacencyList>& graph) {
+	void Boruvka(const vector<WeightedNode>& graph) {
 		vector<int> nodes = getNodes(graph);
 		set<int> components;
 		ds.MakeSet(nodes);
 
-		vector<WeightedAdjacencyList> minimumSpanningTree;
+		vector<WeightedNode> minimumSpanningTree;
 		while (minimumSpanningTree.size() != nodes.size() - 1) {
 			components.clear();
 			for (auto& i : nodes) {
@@ -35,12 +35,12 @@ public:
 
 			for (auto& component : components) {
 				vector<int>vertices = getVerticesByComponent(component, nodes.size());
-				WeightedAdjacencyList minimumEdge(INF, 0, 0);
+				WeightedNode minimumEdge(INF, 0, 0);
 				for (auto& vertice : vertices) {
 					for (auto& node : graph) {
 						if (node.from == vertice or node.to == vertice) {
 							if (find(minimumSpanningTree.begin(), minimumSpanningTree.end(), node) == minimumSpanningTree.end()) {
-								minimumEdge = min(minimumEdge, node, [](const WeightedAdjacencyList& a, const WeightedAdjacencyList& b) { return a.weight < b.weight; });
+								minimumEdge = min(minimumEdge, node, [](const WeightedNode& a, const WeightedNode& b) { return a.weight < b.weight; });
 							}
 
 						}
@@ -54,7 +54,7 @@ public:
 
 			}
 
-			sort(minimumSpanningTree.begin(), minimumSpanningTree.end(), [](const WeightedAdjacencyList& a, const WeightedAdjacencyList& b) {
+			sort(minimumSpanningTree.begin(), minimumSpanningTree.end(), [](const WeightedNode& a, const WeightedNode& b) {
 				if (a.weight != b.weight) {
 					return a.weight < b.weight;
 				}
@@ -75,6 +75,7 @@ public:
 			cout << "(" << i.weight << ", " << i.from << ", " << i.to << ")" << endl;
 		}
 		std::cout << std::endl;
+		cout << endl;
 	}
 };
 
