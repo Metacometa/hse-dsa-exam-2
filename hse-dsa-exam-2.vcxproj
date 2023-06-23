@@ -142,11 +142,13 @@
     <ClCompile Include="DisjointSet.cpp" />
     <ClCompile Include="graphs.cpp" />
     <ClCompile Include="hse-dsa-exam-2.cpp" />
+    <ClCompile Include="Ticket10.cpp" />
     <ClCompile Include="WeightedNode.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DisjointSet.h" />
     <ClInclude Include="graphs.h" />
+    <ClInclude Include="Ticket10.h" />
     <ClInclude Include="Ticket12.h" />
     <ClInclude Include="Ticket16.h" />
     <ClInclude Include="Ticket17.h" />

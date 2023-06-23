@@ -5,6 +5,7 @@
 #include "Ticket7.h"
 #include "Ticket8.h"
 #include "Ticket9.h"
+#include "Ticket10.h"
 #include "Ticket12.h"
 #include "Ticket16.h"
 #include "Ticket17.h"
@@ -25,7 +26,10 @@ int main()
 	ticket8.findStronglyConnectedComponents(ticket8_test1);
 
 	Ticket9 ticket9;
-	ticket9.findBridges(ticket9_test3);
+	ticket9.findBridges(ticket9_test2);
+
+	Ticket10 ticket10;
+	ticket10.findArticulationPoints(ticket9_test2);
 
 	Ticket12 ticket11;
 	ticket11.Dijkstra(dijkstra_test2, 1, 7);
