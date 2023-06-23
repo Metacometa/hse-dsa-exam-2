@@ -71,6 +71,60 @@ vector<pair<int, int>> ticket7_test3{
 	{3,1}
 };
 
+//ticket 8
+
+vector<pair<int, int>> ticket8_test1{
+	{ 0, 7 },
+	{ 1, 9 },
+	{ 2, 9 },
+	{ 2, 10},
+	{ 3, 8 },
+	{ 4, 2 },
+	{ 5, 3 },
+	{ 5, 10},
+	{ 6, 0},
+	{ 6, 1},
+	{ 6, 4},
+	{ 7 ,6},
+	{ 7, 1},
+	{ 8, 5 },
+	{ 9, 4},
+	{ 10, 8},
+	{ 11, 2},
+	{ 11, 9}
+};
+
+//ticket 9
+vector<pair<int, int>> ticket9_test1{
+	{1, 2},
+	{2, 3},
+	{2, 4},
+	{3, 4}
+};
+
+vector<pair<int, int>> ticket9_test2{
+	{1, 2},
+	{1, 3},
+	{2, 3},
+	{2, 6},
+	{4, 5},
+	{4, 6},
+	{5, 6},
+	{6, 7},
+	{7, 8},
+	{7, 11},
+	{8, 9},
+	{9, 10},
+	{10, 11}
+};
+vector<pair<int, int>> ticket9_test3{
+	{1,2},
+	{1, 5},
+	{2, 3},
+	{3, 4},
+	{4, 1}
+};
+
 //Dijkstra tests
 vector<WeightedNode> dijkstra_test1{
 	{10, 1, 2},

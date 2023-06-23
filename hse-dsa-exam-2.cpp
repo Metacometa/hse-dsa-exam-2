@@ -3,6 +3,8 @@
 #include <iostream>
 #include "Ticket6.h"
 #include "Ticket7.h"
+#include "Ticket8.h"
+#include "Ticket9.h"
 #include "Ticket12.h"
 #include "Ticket16.h"
 #include "Ticket17.h"
@@ -18,6 +20,12 @@ int main()
 
 	Ticket7 ticket7;
 	ticket7.topological_sort(ticket7_test3);
+
+	Ticket8 ticket8;
+	ticket8.findStronglyConnectedComponents(ticket8_test1);
+
+	Ticket9 ticket9;
+	ticket9.findBridges(ticket9_test3);
 
 	Ticket12 ticket11;
 	ticket11.Dijkstra(dijkstra_test2, 1, 7);

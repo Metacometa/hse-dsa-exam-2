@@ -153,6 +153,8 @@
     <ClInclude Include="Ticket18.h" />
     <ClInclude Include="Ticket6.h" />
     <ClInclude Include="Ticket7.h" />
+    <ClInclude Include="Ticket8.h" />
+    <ClInclude Include="Ticket9.h" />
     <ClInclude Include="WeightedNode.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

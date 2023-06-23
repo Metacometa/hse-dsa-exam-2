@@ -21,6 +21,14 @@ extern vector<pair<int, int>> ticket7_test1;
 extern vector<pair<int, int>> ticket7_test2;
 extern vector<pair<int, int>> ticket7_test3;
 
+//ticket 8 tests
+extern vector<pair<int, int>> ticket8_test1;
+
+//ticket 9 tests
+extern vector<pair<int, int>> ticket9_test1;
+extern vector<pair<int, int>> ticket9_test2;
+extern vector<pair<int, int>> ticket9_test3;
+
 //ticket 11 Dijkstra
 extern vector<WeightedNode> dijkstra_test1;
 extern vector<WeightedNode> dijkstra_test2;

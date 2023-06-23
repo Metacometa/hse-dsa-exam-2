@@ -1,4 +1,4 @@
-#include "WeightedAdjacencyList.h"
+#include "WeightedNode.h"
 
 WeightedNode::WeightedNode(const int& weight_, const int& from_, const int& to_) : weight(weight_), from(from_), to(to_)
 {
