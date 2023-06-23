@@ -153,6 +153,7 @@
     <ClInclude Include="Ticket16.h" />
     <ClInclude Include="Ticket17.h" />
     <ClInclude Include="Ticket18.h" />
+    <ClInclude Include="Ticket4.h" />
     <ClInclude Include="Ticket6.h" />
     <ClInclude Include="Ticket7.h" />
     <ClInclude Include="Ticket8.h" />

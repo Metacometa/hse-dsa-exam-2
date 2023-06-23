@@ -11,6 +11,10 @@ using namespace std;
 vector<int> getNodes(const vector<WeightedNode> &graph);
 vector<int> getNodes(const vector<pair<int, int>> &graph);
 
+//ticket 4
+extern vector<vector<int>> ticket4_test1;
+extern vector<vector<int>> ticket4_test2;
+
 //ticket 6 tests
 extern vector<pair<int, int>> ticket6_test1;
 extern vector<pair<int, int>> ticket6_test2;

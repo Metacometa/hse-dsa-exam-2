@@ -22,6 +22,20 @@ vector<int> getNodes(const vector<pair<int, int>> &graph)
 	return vector<int>(nodes.begin(), nodes.end());
 }
 
+//ticket 4
+vector<vector<int>> ticket4_test1{
+	{1, 5, 6, 11, 8},
+	{1, 7, 11, 9, 4},
+	{4, 6, 1, 3, 2},
+	{7, 5, 4, 2, 3}
+};
+
+vector<vector<int>> ticket4_test2{
+	{5, 7, 10},
+	{9, 16, 21},
+	{18, 32, 38}
+};
+
 //ticket 6
 vector<pair<int, int>> ticket6_test1{
 	{1, 2},

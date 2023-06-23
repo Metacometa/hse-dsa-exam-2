@@ -1,6 +1,7 @@
 ﻿#pragma once
 
 #include <iostream>
+#include "Ticket4.h"
 #include "Ticket6.h"
 #include "Ticket7.h"
 #include "Ticket8.h"
@@ -16,6 +17,9 @@ using namespace std;
 
 int main()
 {
+	Ticket4 ticket4;
+	ticket4.PrefixSumMatrix(ticket4_test2, 1, 1, 2, 2);
+
 	Ticket6 ticket6;
 	ticket6.findConnectedComponents(ticket6_test2);
 
