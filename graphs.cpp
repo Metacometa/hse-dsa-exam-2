@@ -187,6 +187,16 @@ vector<WeightedNode> bellman_ford_test1{
 	{5, 4, 3}
 };
 
+//test 14 
+vector<WeightedNode> floyd_test1{
+	{5, 0, 1},
+	{5, 1, 2},
+	{3, 1, 3},
+	{2, 3, 0},
+	{-5, 3, 2},
+	{-3, 2, 0}
+};
+
 //ticket 8
 vector<WeightedNode> mst_test1{
 	{50, 1, 2},

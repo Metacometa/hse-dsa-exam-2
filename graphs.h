@@ -40,7 +40,11 @@ extern vector<vector<int>> ticket11_test1;
 extern vector<WeightedNode> dijkstra_test1;
 extern vector<WeightedNode> dijkstra_test2;
 
+//ticket 13
 extern vector<WeightedNode> bellman_ford_test1;
+
+//ticket 14
+extern vector<WeightedNode> floyd_test1;
 
 //ticket 16/17/18/19 tests
 extern vector<WeightedNode> mst_test1;

@@ -11,6 +11,7 @@
 #include "Ticket11.h"
 #include "Ticket12.h"
 #include "Ticket13.h"
+#include "Ticket14.h"
 
 #include "Ticket16.h"
 #include "Ticket17.h"
@@ -47,6 +48,9 @@ int main()
 
 	Ticket13 ticket13;
 	ticket13.BellmanFord(bellman_ford_test1, 1, 4);
+
+	Ticket14 ticket14;
+	ticket14.Floyd(floyd_test1);
 
 	Ticket16 ticket16;
 	ticket16.Kruskal(mst_test3);
