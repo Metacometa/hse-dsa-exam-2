@@ -52,16 +52,17 @@ public:
 		}
 
 		vector<int> path;
-		int buildPath = end;
+		int buildPath = end;	
 		while (buildPath != 0) {
 			path.push_back(buildPath);
 			buildPath = parent[buildPath];
-
 		}
 
 		reverse(path.begin(), path.end());
 
-		std::cout << "Ticket 11: Finding the shorted path - Dijkstra:" << std::endl;
+		std::cout << "Ticket 12: Finding the shorted path - Dijkstra:" << std::endl;
+		cout << "The weight of path is " << distance[to] << endl;
+		cout << "Path: ";
 		for (auto& i : path) {
 			cout << i << " --> ";
 		}

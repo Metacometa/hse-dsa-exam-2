@@ -5,9 +5,13 @@
 #include "Ticket6.h"
 #include "Ticket7.h"
 #include "Ticket8.h"
+
 #include "Ticket9.h"
 #include "Ticket10.h"
+#include "Ticket11.h"
 #include "Ticket12.h"
+#include "Ticket13.h"
+
 #include "Ticket16.h"
 #include "Ticket17.h"
 #include "Ticket18.h"
@@ -35,8 +39,14 @@ int main()
 	Ticket10 ticket10;
 	ticket10.findArticulationPoints(ticket9_test2);
 
-	Ticket12 ticket11;
-	ticket11.Dijkstra(dijkstra_test2, 1, 7);
+	Ticket11 ticket11;
+	ticket11.findEulerianCircuit(ticket11_test1);
+
+	Ticket12 ticket12;
+	ticket12.Dijkstra(dijkstra_test2, 1, 7);
+
+	Ticket13 ticket13;
+	ticket13.BellmanFord(bellman_ford_test1, 1, 4);
 
 	Ticket16 ticket16;
 	ticket16.Kruskal(mst_test3);

@@ -139,6 +139,20 @@ vector<pair<int, int>> ticket9_test3{
 	{4, 1}
 };
 
+//ticket 11 tests
+vector<vector<int>> ticket11_test1{
+	{0, 0, 0, 0, 0, 1, 1, 0, 0, 0},
+	{0, 0, 0, 0, 1, 0, 0, 1, 0, 0},
+	{0, 0, 0, 0, 0, 0, 0, 1, 1, 0},	
+	{0, 0, 0, 0, 0, 1, 0, 1, 1, 1},
+	{0, 1, 0, 0, 0, 1, 1, 0, 1, 0},
+	{1, 0, 0, 1, 1, 0, 1, 0, 0, 0},
+	{1, 0, 0, 0, 1, 1, 0, 1, 0, 0},
+	{0, 1, 1, 1, 0, 0, 1, 0, 0, 0},
+	{0, 0, 1, 1, 1, 0, 0, 0, 0, 1},
+	{0, 0, 0, 1, 0, 0, 0, 0, 1, 0},
+};
+
 //Dijkstra tests
 vector<WeightedNode> dijkstra_test1{
 	{10, 1, 2},
@@ -162,7 +176,16 @@ vector<WeightedNode> dijkstra_test2 {
 	{6, 5, 6}
 };
 
-
+vector<WeightedNode> bellman_ford_test1{
+	{-1, 1, 2 },
+	{4, 1, 3},
+	{3, 2, 3},
+	{2, 2, 5},
+	{2, 2, 4},
+	{-3, 5, 4},
+	{1, 4, 2},
+	{5, 4, 3}
+};
 
 //ticket 8
 vector<WeightedNode> mst_test1{
