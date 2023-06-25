@@ -15,6 +15,10 @@ vector<int> getNodes(const vector<pair<int, int>> &graph);
 extern vector<vector<int>> ticket4_test1;
 extern vector<vector<int>> ticket4_test2;
 
+
+//ticket 5
+extern vector<vector<bool>> ticket5_test1;
+
 //ticket 6 tests
 extern vector<pair<int, int>> ticket6_test1;
 extern vector<pair<int, int>> ticket6_test2;

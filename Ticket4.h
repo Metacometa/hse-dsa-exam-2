@@ -23,15 +23,6 @@ public:
 			}
 		}
 
-		for (int i = 0; i < prefix.size(); ++i) {
-			cout << i << " :";
-			for (int j = 0; j < prefix.front().size(); ++j) {
-				//bijection to prefix
-				cout << prefix[i][j] << " ";
-			}
-			cout << endl;
-		}
-		
 		int answer = prefix[mappedY2][mappedX2] - prefix[mappedY2 ][mappedX1 - 1] - prefix[mappedY1 - 1][mappedX2] + prefix[mappedY1 - 1][mappedX1 - 1];
 		std::cout << "Ticket 4: 2d Prefix sum matrix:" << std::endl;
 		std::cout << "Querie: From(" << x1 << ", " << y1 << ") To(" << x2 << ", " << y2 << ") is " << answer << endl;
