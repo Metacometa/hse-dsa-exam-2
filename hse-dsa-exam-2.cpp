@@ -18,11 +18,14 @@
 #include "Ticket17.h"
 #include "Ticket18.h"
 #include "graphs.h"
+#include "SegmentTree.h"
 
 using namespace std;
 
 int main()
 {
+	SegmentTree st(segment_tree_test1);
+
 	Ticket4 ticket4;
 	ticket4.PrefixSumMatrix(ticket4_test2, 1, 1, 2, 2);
 

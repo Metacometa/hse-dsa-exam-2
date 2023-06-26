@@ -11,6 +11,9 @@ using namespace std;
 vector<int> getNodes(const vector<WeightedNode> &graph);
 vector<int> getNodes(const vector<pair<int, int>> &graph);
 
+//Segment tree arr
+extern vector<int> segment_tree_test1;
+
 //ticket 4
 extern vector<vector<int>> ticket4_test1;
 extern vector<vector<int>> ticket4_test2;

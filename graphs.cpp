@@ -22,6 +22,9 @@ vector<int> getNodes(const vector<pair<int, int>> &graph)
 	return vector<int>(nodes.begin(), nodes.end());
 }
 
+//segment tree
+vector<int> segment_tree_test1{ 1, 2, 3, 4, 5 };
+
 //ticket 4
 vector<vector<int>> ticket4_test1{
 	{1, 5, 6, 11, 8},
